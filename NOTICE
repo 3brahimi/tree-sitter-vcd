@@ -1,0 +1,14 @@
+tree-sitter-vcd (compact-vcd branch)
+Copyright (c) 2026 Masoud Ebrahimi
+The compact VCD changes are licensed under the PolyForm Noncommercial
+License 1.0.0 (see LICENSE).
+
+This is a fork of wavedrom/tree-sitter-vcd. Its original code is used
+and redistributed under its own license:
+
+  tree-sitter-vcd
+  https://github.com/wavedrom/tree-sitter-vcd
+  MIT License, Copyright (c) 2019 WaveDrom
+  Full text: LICENSE.wavedrom
+
+The generated parser in src/ is derived from both.

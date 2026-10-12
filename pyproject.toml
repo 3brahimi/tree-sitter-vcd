@@ -12,11 +12,11 @@ classifiers = [
 ]
 description = "VCD and compact VCD grammar for tree-sitter (fork of wavedrom/tree-sitter-vcd)"
 keywords = [ "incremental", "parsing", "tree-sitter", "vcd", "waveform" ]
-license.text = "MIT"
+license.text = "PolyForm-Noncommercial-1.0.0"
 name = "tree-sitter-vcd"
 readme = "README.md"
 requires-python = ">=3.10"
-version = "0.2.0"
+version = "0.3.0"
 
 [project.optional-dependencies]
 core = [ "tree-sitter>=0.25" ]

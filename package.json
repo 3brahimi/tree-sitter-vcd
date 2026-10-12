@@ -2,7 +2,7 @@
   "name": "tree-sitter-vcd",
   "version": "0.1.2",
   "description": "VCD grammar for tree-sitter",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "author": "Aliaksei Chapyzhenka",
   "homepage": "https://github.com/wavedrom/tree-sitter-vcd#readme",
   "repository": {
