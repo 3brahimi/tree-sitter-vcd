@@ -1,0 +1,1303 @@
+[
+  {
+    "type": "attribute",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bus_decl",
+    "named": true,
+    "fields": {
+      "bit": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "signal_name",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "signal_name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "change",
+    "named": true,
+    "fields": {
+      "time": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "run_value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "copy_item",
+    "named": true,
+    "fields": {
+      "count": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      },
+      "invert": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "~",
+            "named": false
+          }
+        ]
+      },
+      "shift": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "shift",
+            "named": true
+          }
+        ]
+      },
+      "source": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "signal_name",
+            "named": true
+          }
+        ]
+      },
+      "start": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "decimal_number",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "declaration_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "attribute",
+          "named": true
+        },
+        {
+          "type": "identifier_code",
+          "named": true
+        },
+        {
+          "type": "reference",
+          "named": true
+        },
+        {
+          "type": "scope_identifier",
+          "named": true
+        },
+        {
+          "type": "scope_type",
+          "named": true
+        },
+        {
+          "type": "size",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "time_number",
+          "named": true
+        },
+        {
+          "type": "time_unit",
+          "named": true
+        },
+        {
+          "type": "var_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "definition",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "def_body",
+            "named": true
+          }
+        ]
+      },
+      "kind": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "$def",
+            "named": false
+          },
+          {
+            "type": "$timebase",
+            "named": false
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "def_name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "derive",
+    "named": true,
+    "fields": {
+      "clock": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "signal_ref",
+            "named": true
+          }
+        ]
+      },
+      "cycles": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      },
+      "invert": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "~",
+            "named": false
+          }
+        ]
+      },
+      "source": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "signal_name",
+            "named": true
+          }
+        ]
+      },
+      "target": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "signal_name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "exact_time",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "decimal_number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "identifier_code",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "index",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "decimal_number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "order",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "signal_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "reference",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "index",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "run",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "change",
+          "named": true
+        },
+        {
+          "type": "copy_item",
+          "named": true
+        },
+        {
+          "type": "signal_ref",
+          "named": true
+        },
+        {
+          "type": "template_ref",
+          "named": true
+        },
+        {
+          "type": "time_run",
+          "named": true
+        },
+        {
+          "type": "timebase_run",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "runs_flag",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "runs_section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "run",
+          "named": true
+        },
+        {
+          "type": "runs_flag",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "scalar_value_change",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier_code",
+          "named": true
+        },
+        {
+          "type": "value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "scope_identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "scope_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "simulation_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "attribute",
+          "named": true
+        },
+        {
+          "type": "exact_time",
+          "named": true
+        },
+        {
+          "type": "simulation_time",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "value_change",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "simulation_time",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "decimal_number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "size",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "decimal_number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "value_change_dump_definitions",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "summary_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "signal_ref",
+          "named": true
+        },
+        {
+          "type": "summary_field",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "summary_section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "summary_line",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "template_ref",
+    "named": true,
+    "fields": {
+      "start": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      },
+      "template": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "def_name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "time_number",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "time_run",
+    "named": true,
+    "fields": {
+      "count": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      },
+      "offset": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      },
+      "period": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      },
+      "start": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "value_cycle",
+          "named": true
+        },
+        {
+          "type": "value_step",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "time_unit",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "timebase_run",
+    "named": true,
+    "fields": {
+      "start": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      },
+      "timebase": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "def_name",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "value_cycle",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "value_change",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "scalar_value_change",
+          "named": true
+        },
+        {
+          "type": "vector_value_change",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "value_change_dump_definitions",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "bus_decl",
+          "named": true
+        },
+        {
+          "type": "declaration_command",
+          "named": true
+        },
+        {
+          "type": "definition",
+          "named": true
+        },
+        {
+          "type": "derive",
+          "named": true
+        },
+        {
+          "type": "order",
+          "named": true
+        },
+        {
+          "type": "runs_section",
+          "named": true
+        },
+        {
+          "type": "simulation_command",
+          "named": true
+        },
+        {
+          "type": "summary_section",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "value_cycle",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "run_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "value_step",
+    "named": true,
+    "fields": {
+      "base": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "run_value",
+            "named": true
+          }
+        ]
+      },
+      "op": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "++",
+            "named": false
+          },
+          {
+            "type": "--",
+            "named": false
+          }
+        ]
+      },
+      "step": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "decimal_number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "var_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "vector_value_change",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "binary_number",
+          "named": true
+        },
+        {
+          "type": "hex_number",
+          "named": true
+        },
+        {
+          "type": "identifier_code",
+          "named": true
+        },
+        {
+          "type": "real_number",
+          "named": true
+        },
+        {
+          "type": "string_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": "#=",
+    "named": false
+  },
+  {
+    "type": "$attrbegin",
+    "named": false
+  },
+  {
+    "type": "$attrend",
+    "named": false
+  },
+  {
+    "type": "$bus",
+    "named": false
+  },
+  {
+    "type": "$comment",
+    "named": false
+  },
+  {
+    "type": "$date",
+    "named": false
+  },
+  {
+    "type": "$def",
+    "named": false
+  },
+  {
+    "type": "$derive",
+    "named": false
+  },
+  {
+    "type": "$dumpall",
+    "named": false
+  },
+  {
+    "type": "$dumpoff",
+    "named": false
+  },
+  {
+    "type": "$dumpon",
+    "named": false
+  },
+  {
+    "type": "$dumpvars",
+    "named": false
+  },
+  {
+    "type": "$end",
+    "named": false
+  },
+  {
+    "type": "$enddefinitions",
+    "named": false
+  },
+  {
+    "type": "$order",
+    "named": false
+  },
+  {
+    "type": "$runs",
+    "named": false
+  },
+  {
+    "type": "$scope",
+    "named": false
+  },
+  {
+    "type": "$summary",
+    "named": false
+  },
+  {
+    "type": "$timebase",
+    "named": false
+  },
+  {
+    "type": "$timescale",
+    "named": false
+  },
+  {
+    "type": "$upscope",
+    "named": false
+  },
+  {
+    "type": "$var",
+    "named": false
+  },
+  {
+    "type": "$version",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": "++",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "--",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "abs",
+    "named": false
+  },
+  {
+    "type": "begin",
+    "named": false
+  },
+  {
+    "type": "bin",
+    "named": false
+  },
+  {
+    "type": "binary_number",
+    "named": true
+  },
+  {
+    "type": "bit",
+    "named": false
+  },
+  {
+    "type": "byte",
+    "named": false
+  },
+  {
+    "type": "class",
+    "named": false
+  },
+  {
+    "type": "def_body",
+    "named": true
+  },
+  {
+    "type": "def_name",
+    "named": true
+  },
+  {
+    "type": "delay",
+    "named": false
+  },
+  {
+    "type": "delta",
+    "named": false
+  },
+  {
+    "type": "enum",
+    "named": false
+  },
+  {
+    "type": "event",
+    "named": false
+  },
+  {
+    "type": "fork",
+    "named": false
+  },
+  {
+    "type": "fs",
+    "named": false
+  },
+  {
+    "type": "function",
+    "named": false
+  },
+  {
+    "type": "generate",
+    "named": false
+  },
+  {
+    "type": "hex",
+    "named": false
+  },
+  {
+    "type": "hex_number",
+    "named": true
+  },
+  {
+    "type": "id",
+    "named": false
+  },
+  {
+    "type": "index",
+    "named": false
+  },
+  {
+    "type": "int",
+    "named": false
+  },
+  {
+    "type": "integer",
+    "named": false
+  },
+  {
+    "type": "interface",
+    "named": false
+  },
+  {
+    "type": "lines",
+    "named": false
+  },
+  {
+    "type": "logic",
+    "named": false
+  },
+  {
+    "type": "longint",
+    "named": false
+  },
+  {
+    "type": "module",
+    "named": false
+  },
+  {
+    "type": "ms",
+    "named": false
+  },
+  {
+    "type": "name",
+    "named": false
+  },
+  {
+    "type": "ns",
+    "named": false
+  },
+  {
+    "type": "package",
+    "named": false
+  },
+  {
+    "type": "packed",
+    "named": false
+  },
+  {
+    "type": "parameter",
+    "named": false
+  },
+  {
+    "type": "port",
+    "named": false
+  },
+  {
+    "type": "program",
+    "named": false
+  },
+  {
+    "type": "ps",
+    "named": false
+  },
+  {
+    "type": "real",
+    "named": false
+  },
+  {
+    "type": "real_number",
+    "named": true
+  },
+  {
+    "type": "realtime",
+    "named": false
+  },
+  {
+    "type": "reg",
+    "named": false
+  },
+  {
+    "type": "run_value",
+    "named": true
+  },
+  {
+    "type": "s",
+    "named": false
+  },
+  {
+    "type": "shift",
+    "named": true
+  },
+  {
+    "type": "shortint",
+    "named": false
+  },
+  {
+    "type": "shortreal",
+    "named": false
+  },
+  {
+    "type": "signal_name",
+    "named": true
+  },
+  {
+    "type": "signal_ref",
+    "named": true
+  },
+  {
+    "type": "spaced",
+    "named": false
+  },
+  {
+    "type": "sparray",
+    "named": false
+  },
+  {
+    "type": "string",
+    "named": false
+  },
+  {
+    "type": "string_value",
+    "named": true
+  },
+  {
+    "type": "struct",
+    "named": false
+  },
+  {
+    "type": "summary_field",
+    "named": true
+  },
+  {
+    "type": "supply0",
+    "named": false
+  },
+  {
+    "type": "supply1",
+    "named": false
+  },
+  {
+    "type": "task",
+    "named": false
+  },
+  {
+    "type": "text",
+    "named": true
+  },
+  {
+    "type": "tight",
+    "named": false
+  },
+  {
+    "type": "time",
+    "named": false
+  },
+  {
+    "type": "tri",
+    "named": false
+  },
+  {
+    "type": "tri0",
+    "named": false
+  },
+  {
+    "type": "tri1",
+    "named": false
+  },
+  {
+    "type": "triand",
+    "named": false
+  },
+  {
+    "type": "trior",
+    "named": false
+  },
+  {
+    "type": "trireg",
+    "named": false
+  },
+  {
+    "type": "union",
+    "named": false
+  },
+  {
+    "type": "us",
+    "named": false
+  },
+  {
+    "type": "value",
+    "named": true
+  },
+  {
+    "type": "vhdl_architecture",
+    "named": false
+  },
+  {
+    "type": "vhdl_block",
+    "named": false
+  },
+  {
+    "type": "vhdl_for_generate",
+    "named": false
+  },
+  {
+    "type": "vhdl_function",
+    "named": false
+  },
+  {
+    "type": "vhdl_generate",
+    "named": false
+  },
+  {
+    "type": "vhdl_if_generate",
+    "named": false
+  },
+  {
+    "type": "vhdl_package",
+    "named": false
+  },
+  {
+    "type": "vhdl_procedure",
+    "named": false
+  },
+  {
+    "type": "vhdl_process",
+    "named": false
+  },
+  {
+    "type": "vhdl_record",
+    "named": false
+  },
+  {
+    "type": "wand",
+    "named": false
+  },
+  {
+    "type": "wire",
+    "named": false
+  },
+  {
+    "type": "wor",
+    "named": false
+  },
+  {
+    "type": "~",
+    "named": false
+  }
+]

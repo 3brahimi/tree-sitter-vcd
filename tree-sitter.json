@@ -1,0 +1,5 @@
+{
+  "grammars": [{"name": "vcd", "camelcase": "Vcd", "scope": "source.vcd", "path": ".", "file-types": ["vcd", "cvcd"]}],
+  "metadata": {"version": "0.1.0", "license": "MIT", "description": "VCD and compact VCD grammar (fork of wavedrom/tree-sitter-vcd)", "authors": [{"name": "Masoud Ebrahimi"}]},
+  "bindings": {"c": true, "python": true}
+}
